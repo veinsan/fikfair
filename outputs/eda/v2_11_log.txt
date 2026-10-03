@@ -1,0 +1,99 @@
+
+======================================================================
+TabICLv2 CONFIG SWEEP (5x3 KFold, RMSE averaged over repeats)
+======================================================================
+  default                    RMSE=7.6337  (173s)
+  norm=none                  RMSE=7.6007  (115s)
+  norm=power                 RMSE=7.6758  (119s)
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+  norm=quantile              RMSE=7.9907  (116s)
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (305). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/sklearn/preprocessing/_data.py:2912: UserWarning: n_quantiles (1000) is greater than the total number of samples (306). n_quantiles is set to n_samples.
+  warnings.warn(
+  norm=none+power+quantile   RMSE=7.6973  (230s)
+  norm=robust                RMSE=7.6737  (81s)
+  outlier=3                  RMSE=7.6335  (40s)
+  outlier=6                  RMSE=7.6337  (40s)
+  outlier=100(off)           RMSE=7.6337  (40s)
+  shuffle=random             RMSE=7.6095  (40s)
+  n_est=16                   RMSE=7.6354  (76s)
+
+======================================================================
+SEED BAGGING (default config, 4 random_states averaged)
+======================================================================
+  default x4 seeds           RMSE=7.6467
+  norm=none x4 seeds         RMSE=7.6123
+  shuffle=random x4 seeds    RMSE=7.6570
+
+                   config   rmse
+               norm=none 7.6007
+          shuffle=random 7.6095
+      norm=none x4 seeds 7.6123
+               outlier=3 7.6335
+               outlier=6 7.6337
+        outlier=100(off) 7.6337
+                 default 7.6337
+                n_est=16 7.6354
+        default x4 seeds 7.6467
+ shuffle=random x4 seeds 7.6570
+             norm=robust 7.6737
+              norm=power 7.6758
+norm=none+power+quantile 7.6973
+           norm=quantile 7.9907
+[fig] outputs/eda/v2_11_tabicl_config.png

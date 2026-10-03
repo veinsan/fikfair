@@ -1,0 +1,16 @@
+
+======================================================================
+PLAIN vs PL at matched pseudo/labelled ratio (per-fold RMSE on the query subset)
+======================================================================
+  n=120 q=30  plain=10.0111  PL=10.0338  gain=-0.0227  folds PL better=0.40
+  n=180 q=45  plain=8.4663  PL=8.3998  gain=+0.0665  folds PL better=0.67
+  n=240 q=60  plain=8.1364  PL=8.0194  gain=+0.1170  folds PL better=0.73
+  n=306 q=76  plain=7.6146  PL=7.5330  gain=+0.0816  folds PL better=0.60
+
+======================================================================
+POWER-LAW FIT  RMSE(n) = a + b * n^-c  and extrapolation to n = 382
+======================================================================
+  plain: a=7.118 b=11173.39 c=1.726  -> RMSE(306)=7.6908  RMSE(382)=7.5086
+  pl   : a=7.079 b=20996.90 c=1.853  -> RMSE(306)=7.5988  RMSE(382)=7.4236
+  gain vs log(n) slope = +0.1258 per log-unit -> gain extrapolated to n=382: +0.1423 (CV at n=306: +0.0816)
+[fig] outputs/eda/v4_20_learning_curve.png

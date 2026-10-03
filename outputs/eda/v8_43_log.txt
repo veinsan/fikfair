@@ -1,0 +1,15 @@
+
+======================================================================
+GP sweep, repeat 1 (5 folds)
+======================================================================
+  raw                ARD Matern52  RMSE=8.8664  learned noise var (std. log-y)=0.075  shortest length-scales: [0.94 1.14 1.23 1.44]
+  raw                ARD RBF       RMSE=9.0632  learned noise var (std. log-y)=0.117  shortest length-scales: [1.21 1.27 1.42 1.44]
+  whitened PCs       ARD Matern52  RMSE=8.7870  learned noise var (std. log-y)=0.027  shortest length-scales: [1.43 1.46 1.57 2.56]
+  whitened PCs       ARD RBF       RMSE=8.8106  learned noise var (std. log-y)=0.058  shortest length-scales: [1.16 1.21 1.3  1.77]
+  PCs (unwhitened)   ARD Matern52  RMSE=8.8201  learned noise var (std. log-y)=0.027  shortest length-scales: [0.65 0.7  0.8  0.81]
+  PCs (unwhitened)   ARD RBF       RMSE=8.8187  learned noise var (std. log-y)=0.058  shortest length-scales: [0.52 0.74 0.76 0.77]
+  ranks              ARD Matern52  RMSE=9.5544  learned noise var (std. log-y)=0.020  shortest length-scales: [1.52 1.53 1.85 1.85]
+  ranks              ARD RBF       RMSE=9.7993  learned noise var (std. log-y)=0.035  shortest length-scales: [1.27 1.3  1.34 1.49]
+
+  references, same folds: TabICL plain 7.525, SVR-plateau ~7.9, v6b blend ~7.2
+[fig] outputs/eda/v8_43_gp.png

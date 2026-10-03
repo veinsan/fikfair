@@ -1,0 +1,16 @@
+
+======================================================================
+FINE-TUNE vs ZERO-SHOT (5x3 KFold)
+======================================================================
+  zero-shot                    RMSE=7.6007  (35s)
+  ft lr=1e-5                   RMSE=7.6942  (811s)
+  ft lr=3e-6                   RMSE=7.6272  (2854s)
+  ft lr=1e-5 freeze col+row    RMSE=7.6544  (266s)
+
+======================================================================
+PAIRED PER-FOLD DIFFERENCE vs zero-shot (negative = fine-tune better)
+======================================================================
+  ft lr=1e-5                   mean diff=+0.0989  folds better: 1/15  worst=+0.612
+  ft lr=3e-6                   mean diff=+0.0289  folds better: 3/15  worst=+0.236
+  ft lr=1e-5 freeze col+row    mean diff=+0.0589  folds better: 6/15  worst=+0.463
+[fig] outputs/eda/v2_14_finetune.png

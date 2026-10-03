@@ -1,0 +1,36 @@
+
+======================================================================
+15 folds, M=8
+======================================================================
+  fold 1/15
+  fold 2/15
+  fold 3/15
+  fold 4/15
+  fold 5/15
+  fold 6/15
+  fold 7/15
+  fold 8/15
+  fold 9/15
+  fold 10/15
+  fold 11/15
+  fold 12/15
+  fold 13/15
+  fold 14/15
+  fold 15/15
+
+======================================================================
+RESULT (RMSE averaged over the 3 repeats = single-fit view, the honest one for the final model)
+======================================================================
+  single 100%        per-repeat RMSE=7.6077 (+0.0000)  pooled=7.4222  folds better than single: 0/15
+  subag f=0.9        per-repeat RMSE=7.6275 (+0.0197)  pooled=7.4608  folds better than single: 7/15
+  subag f=0.8        per-repeat RMSE=7.7586 (+0.1509)  pooled=7.6145  folds better than single: 4/15
+  subag f=0.65       per-repeat RMSE=7.8977 (+0.2900)  pooled=7.7523  folds better than single: 4/15
+  seed-bag 100% x8   per-repeat RMSE=7.6013 (-0.0064)  pooled=7.4193  folds better than single: 10/15
+
+======================================================================
+HOW MANY SUBSAMPLES ARE NEEDED? (per-repeat RMSE of the first m members)
+======================================================================
+  f=0.9: m=1:7.867 m=2:7.698 m=3:7.705 m=4:7.667 m=5:7.653 m=6:7.620 m=7:7.602 m=8:7.627
+  f=0.8: m=1:7.926 m=2:7.758 m=3:7.743 m=4:7.768 m=5:7.769 m=6:7.734 m=7:7.738 m=8:7.759
+  f=0.65: m=1:8.383 m=2:8.128 m=3:8.033 m=4:7.940 m=5:7.923 m=6:7.891 m=7:7.890 m=8:7.898
+[fig] outputs/eda/v7_34_subagging.png

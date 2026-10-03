@@ -1,0 +1,33 @@
+
+======================================================================
+RANDOM 5x3 KFOLD
+======================================================================
+  SVR-multiPCA     RMSE=8.1136  fold-sd=0.725  MAE=5.496  (1s)
+  TabICLv2-32      RMSE=7.6541  fold-sd=0.804  MAE=5.070  (138s)
+  TabICLv2+PCA     RMSE=7.6947  fold-sd=0.733  MAE=5.128  (43s)
+Traceback (most recent call last):
+  File "/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/tabpfn/regressor.py", line 2301, in _validate_eval_metric
+    return RegressorEvalMetrics(eval_metric)  # Convert string to Enum
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rian/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/enum.py", line 751, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rian/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/enum.py", line 1170, in __new__
+    raise ve_exc
+ValueError: 'rmse' is not a valid RegressorEvalMetrics
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rian/Projects/fikfair/eda/07_model_benchmark.py", line 119, in <module>
+    p = make().fit(X[tri], y[tri]).predict(X[vai])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rian/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/tabpfn/regressor.py", line 1232, in fit
+    self.eval_metric_ = _validate_eval_metric(self.eval_metric)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rian/Projects/fikfair/.venv/lib/python3.12/site-packages/tabpfn/regressor.py", line 2304, in _validate_eval_metric
+    raise ValueError(
+ValueError: Invalid eval_metric: `rmse`. Must be one of ['nll', 'crps']

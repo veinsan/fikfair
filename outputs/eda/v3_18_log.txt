@@ -1,0 +1,14 @@
+
+======================================================================
+8-SPLIT (87.5% of the query set as pseudo-labelled context)
+======================================================================
+  ICL-bag4[PL 8-split]               RMSE=7.5113  (1953s)
+
+======================================================================
+RMSE (bagged OOF) vs pseudo fraction
+======================================================================
+  fraction=0.0    ICL-bag4 (v2 model)      OOF RMSE=7.4289
+  fraction=0.5    ICL-bag4[PL halves]      OOF RMSE=7.3567
+  fraction=0.75   ICL-bag4[PL 4-split]     OOF RMSE=7.3320
+  fraction=0.875  ICL-bag4[PL 8-split]     OOF RMSE=7.3213
+[fig] outputs/eda/v3_18_pseudo_sweep.png

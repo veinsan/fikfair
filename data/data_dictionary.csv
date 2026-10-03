@@ -1,0 +1,27 @@
+column_name,data_type,description,unit,missing_value,notes
+record_id,string,Anonymous record identifier,none,no,Unique technical ID; no geographic/source meaning
+feature_01,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_02,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_03,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_04,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_05,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_06,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_07,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_08,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_09,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_10,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_11,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_12,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_13,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_14,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_15,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_16,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_17,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_18,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_19,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_20,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_21,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_22,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_23,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+feature_24,float,Anonymized transformed environmental/climate feature,dimensionless,no,Source mapping and exact transformation parameters are undisclosed
+target,float,"Anonymous Competition Score (ACS), a competition-specific transformed composite target",dimensionless,no,Train-only; observed range 32.5864–100.4400; exact source construction is private

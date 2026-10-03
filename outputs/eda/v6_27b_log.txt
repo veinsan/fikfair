@@ -1,0 +1,976 @@
+
+======================================================================
+CANDIDATES (v5 reference: FM-PL-mean + SVR nested = 7.2959; SVR alone 8.11, resid corr vs FM 0.865)
+======================================================================
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4479
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  8.97it/s][A100%|██████████| 1/1 [00:00<00:00,  8.93it/s]
+Time taken for round 0: 0.45926785469055176 seconds
+Round 1 Val MSE: 0.4510
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 12.85it/s]
+Time taken for round 1: 0.19767522811889648 seconds
+Round 2 Val MSE: 0.4636
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 11.25it/s]
+Time taken for round 2: 0.18401312828063965 seconds
+Round 3 Val MSE: 0.4764
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  8.23it/s][A100%|██████████| 1/1 [00:00<00:00,  8.21it/s]
+Time taken for round 3: 0.24662327766418457 seconds
+Round 4 Val MSE: 0.4952
+Early stopping at iteration 4
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:01<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.3604
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  6.91it/s][A100%|██████████| 1/1 [00:00<00:00,  6.80it/s]
+Time taken for round 0: 0.38632655143737793 seconds
+Round 1 Val MSE: 0.3608
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 32.78it/s]
+Time taken for round 1: 0.18492627143859863 seconds
+Round 2 Val MSE: 0.4105
+Early stopping at iteration 2
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4612
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 642.81it/s]
+Time taken for round 0: 0.006248950958251953 seconds
+Round 1 Val MSE: 0.4581
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 936.86it/s]
+Time taken for round 1: 0.0038089752197265625 seconds
+Round 2 Val MSE: 0.4689
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 905.51it/s]
+Time taken for round 2: 0.003694295883178711 seconds
+Round 3 Val MSE: 0.4818
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 942.96it/s]
+Time taken for round 3: 0.0036411285400390625 seconds
+Round 4 Val MSE: 0.4930
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 973.61it/s]
+Time taken for round 4: 0.0034804344177246094 seconds
+Final Val MSE: 0.5033
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4639
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 897.37it/s]
+Time taken for round 0: 0.003772258758544922 seconds
+Round 1 Val MSE: 0.4469
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 271.41it/s]
+Time taken for round 1: 0.006158590316772461 seconds
+Round 2 Val MSE: 0.4580
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1009.95it/s]
+Time taken for round 2: 0.0044133663177490234 seconds
+Round 3 Val MSE: 0.4699
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 933.94it/s]
+Time taken for round 3: 0.008339166641235352 seconds
+Round 4 Val MSE: 0.4733
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 999.60it/s]
+Time taken for round 4: 0.006276369094848633 seconds
+Final Val MSE: 0.4737
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.3925
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 35.36it/s]
+Time taken for round 0: 0.05553746223449707 seconds
+Round 1 Val MSE: 0.3740
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 31.96it/s]
+Time taken for round 1: 0.06272530555725098 seconds
+Round 2 Val MSE: 0.3899
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 87.12it/s]
+Time taken for round 2: 0.051735877990722656 seconds
+Round 3 Val MSE: 0.4067
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 32.51it/s]
+Time taken for round 3: 0.049323081970214844 seconds
+Round 4 Val MSE: 0.4164
+Early stopping at iteration 4
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4835
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 31.97it/s]
+Time taken for round 0: 0.08952450752258301 seconds
+Round 1 Val MSE: 0.4717
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 996.98it/s]
+Time taken for round 1: 0.011791467666625977 seconds
+Round 2 Val MSE: 0.4917
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 46.87it/s]
+Time taken for round 2: 0.04803895950317383 seconds
+Round 3 Val MSE: 0.5012
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 14.75it/s]
+Time taken for round 3: 0.0964510440826416 seconds
+Round 4 Val MSE: 0.5041
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 24.70it/s]
+Time taken for round 4: 0.11678338050842285 seconds
+Final Val MSE: 0.5066
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.2838
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 10.97it/s]
+Time taken for round 0: 0.17261195182800293 seconds
+Round 1 Val MSE: 0.2850
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 12.46it/s]
+Time taken for round 1: 0.18993353843688965 seconds
+Round 2 Val MSE: 0.3204
+Early stopping at iteration 2
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.6719
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 13.43it/s]
+Time taken for round 0: 0.14861464500427246 seconds
+Round 1 Val MSE: 0.7810
+Early stopping at iteration 1
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.3955
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 15.25it/s]
+Time taken for round 0: 0.11920833587646484 seconds
+Round 1 Val MSE: 0.4288
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 13.22it/s]
+Time taken for round 1: 0.16102385520935059 seconds
+Round 2 Val MSE: 0.4832
+Early stopping at iteration 2
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4935
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 17.25it/s]
+Time taken for round 0: 0.0850830078125 seconds
+Round 1 Val MSE: 0.4838
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 121.69it/s]
+Time taken for round 1: 0.034387826919555664 seconds
+Round 2 Val MSE: 0.4955
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 26.85it/s]
+Time taken for round 2: 0.07806110382080078 seconds
+Round 3 Val MSE: 0.5337
+Early stopping at iteration 3
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.8428
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1380.61it/s]
+Time taken for round 0: 0.002421140670776367 seconds
+Round 1 Val MSE: 0.7833
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1638.40it/s]
+Time taken for round 1: 0.004866600036621094 seconds
+Round 2 Val MSE: 0.7571
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1043.36it/s]
+Time taken for round 2: 0.0034601688385009766 seconds
+Round 3 Val MSE: 0.7792
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 665.97it/s]
+Time taken for round 3: 0.0029349327087402344 seconds
+Round 4 Val MSE: 0.7922
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1338.75it/s]
+Time taken for round 4: 0.003824949264526367 seconds
+Final Val MSE: 0.7896
+self.best_iter=2
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 244, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.4332
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 10.73it/s]
+Time taken for round 0: 0.1999657154083252 seconds
+Round 1 Val MSE: 0.4124
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 12.05it/s]
+Time taken for round 1: 0.1773817539215088 seconds
+Round 2 Val MSE: 0.4373
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 11.42it/s]
+Time taken for round 2: 0.22608137130737305 seconds
+Round 3 Val MSE: 0.4914
+Early stopping at iteration 3
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.3620
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 11.82it/s]
+Time taken for round 0: 0.16867899894714355 seconds
+Round 1 Val MSE: 0.3802
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 936.02it/s]
+Time taken for round 1: 0.009698152542114258 seconds
+Round 2 Val MSE: 0.4130
+Early stopping at iteration 2
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.5693
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 62.08it/s]
+Time taken for round 0: 0.03259778022766113 seconds
+Round 1 Val MSE: 0.5517
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 211.94it/s]
+Time taken for round 1: 0.04147744178771973 seconds
+Round 2 Val MSE: 0.5981
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 11.99it/s]
+Time taken for round 2: 0.16476655006408691 seconds
+Round 3 Val MSE: 0.6486
+Early stopping at iteration 3
+self.best_iter=1
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 245, d: 24, and nval: 61
+======================================================================
+Round 0 Val MSE: 0.3221
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 13.16it/s]
+Time taken for round 0: 0.12091207504272461 seconds
+Round 1 Val MSE: 0.3277
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 168.31it/s]
+Time taken for round 1: 0.055475473403930664 seconds
+Round 2 Val MSE: 0.3699
+Early stopping at iteration 2
+self.best_iter=0
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+factory is None, creating factory
+kernel_type='l2', M_batch_size=8000
+Fitting xRFM with 1 trees and 0 iterations per tree
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]======================================================================
+Fitting RFM with ntrain: 306, d: 24, and nval: 76
+======================================================================
+Round 0 Val MSE: 0.3743
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 80.94it/s]
+Time taken for round 0: 0.03129696846008301 seconds
+Round 1 Val MSE: 0.3518
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 56.55it/s]
+Time taken for round 1: 0.04706907272338867 seconds
+Round 2 Val MSE: 0.3366
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 264.76it/s]
+Time taken for round 2: 0.014696121215820312 seconds
+Round 3 Val MSE: 0.3340
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 170.69it/s]
+Time taken for round 3: 0.018803119659423828 seconds
+Round 4 Val MSE: 0.3328
+Sampling AGOP on maximum of 24000 total points
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 58.26it/s]
+Time taken for round 4: 0.04279899597167969 seconds
+Final Val MSE: 0.3307
+self.best_iter=5
+Tree has no split, stopping training
+Building trees:   0%|          | 0/1 [00:00<?, ?it/s]
+  xRFM-D         RMSE=8.5813 (bagged OOF 8.3238)  resid-corr vs FM=0.895  v5+this=7.2959 (+0.0000)  FM+this(no SVR)=7.3030  [6s]
+Seed set to 1608637542
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+ls_eps=0.1
+Seed set to 494155588
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+Validation in epoch 26
+Validation in epoch 27
+Validation in epoch 28
+Validation in epoch 29
+Validation in epoch 30
+Validation in epoch 31
+Validation in epoch 32
+Validation in epoch 33
+Validation in epoch 34
+Validation in epoch 35
+Validation in epoch 36
+Validation in epoch 37
+Validation in epoch 38
+Validation in epoch 39
+Validation in epoch 40
+Validation in epoch 41
+Validation in epoch 42
+Validation in epoch 43
+Validation in epoch 44
+Validation in epoch 45
+Validation in epoch 46
+Validation in epoch 47
+Validation in epoch 48
+Validation in epoch 49
+Validation in epoch 50
+Validation in epoch 51
+ls_eps=0.1
+Seed set to 1438136084
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+Validation in epoch 26
+Validation in epoch 27
+Validation in epoch 28
+Validation in epoch 29
+Validation in epoch 30
+Validation in epoch 31
+Validation in epoch 32
+Validation in epoch 33
+Validation in epoch 34
+Validation in epoch 35
+Validation in epoch 36
+Validation in epoch 37
+Validation in epoch 38
+Validation in epoch 39
+Validation in epoch 40
+Validation in epoch 41
+Validation in epoch 42
+Validation in epoch 43
+Validation in epoch 44
+Validation in epoch 45
+Validation in epoch 46
+Validation in epoch 47
+Validation in epoch 48
+Validation in epoch 49
+Validation in epoch 50
+Validation in epoch 51
+Validation in epoch 52
+Validation in epoch 53
+Validation in epoch 54
+Validation in epoch 55
+Validation in epoch 56
+Validation in epoch 57
+Validation in epoch 58
+Validation in epoch 59
+Validation in epoch 60
+Validation in epoch 61
+Validation in epoch 62
+Validation in epoch 63
+Validation in epoch 64
+Validation in epoch 65
+Validation in epoch 66
+Validation in epoch 67
+Validation in epoch 68
+Validation in epoch 69
+Validation in epoch 70
+Validation in epoch 71
+Validation in epoch 72
+Validation in epoch 73
+Validation in epoch 74
+Validation in epoch 75
+Validation in epoch 76
+Validation in epoch 77
+Validation in epoch 78
+Validation in epoch 79
+Validation in epoch 80
+Validation in epoch 81
+Validation in epoch 82
+Validation in epoch 83
+Validation in epoch 84
+Validation in epoch 85
+Validation in epoch 86
+Validation in epoch 87
+Validation in epoch 88
+Validation in epoch 89
+ls_eps=0.1
+Seed set to 2100288459
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+ls_eps=0.1
+Seed set to 1219050685
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+Validation in epoch 26
+Validation in epoch 27
+Validation in epoch 28
+Validation in epoch 29
+Validation in epoch 30
+Validation in epoch 31
+Validation in epoch 32
+Validation in epoch 33
+Validation in epoch 34
+Validation in epoch 35
+Validation in epoch 36
+Validation in epoch 37
+Validation in epoch 38
+Validation in epoch 39
+ls_eps=0.1
+Seed set to 487429255
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+Validation in epoch 26
+Validation in epoch 27
+Validation in epoch 28
+Validation in epoch 29
+Validation in epoch 30
+Validation in epoch 31
+Validation in epoch 32
+Validation in epoch 33
+Validation in epoch 34
+Validation in epoch 35
+Validation in epoch 36
+Validation in epoch 37
+Validation in epoch 38
+Validation in epoch 39
+Validation in epoch 40
+Validation in epoch 41
+Validation in epoch 42
+Validation in epoch 43
+Validation in epoch 44
+Validation in epoch 45
+Validation in epoch 46
+Validation in epoch 47
+Validation in epoch 48
+Validation in epoch 49
+Validation in epoch 50
+Validation in epoch 51
+Validation in epoch 52
+Validation in epoch 53
+Validation in epoch 54
+Validation in epoch 55
+Validation in epoch 56
+Validation in epoch 57
+Validation in epoch 58
+Validation in epoch 59
+Validation in epoch 60
+Validation in epoch 61
+Validation in epoch 62
+Validation in epoch 63
+Validation in epoch 64
+Validation in epoch 65
+Validation in epoch 66
+Validation in epoch 67
+Validation in epoch 68
+ls_eps=0.1
+Seed set to 75120128
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+Validation in epoch 26
+Validation in epoch 27
+Validation in epoch 28
+Validation in epoch 29
+Validation in epoch 30
+Validation in epoch 31
+Validation in epoch 32
+Validation in epoch 33
+Validation in epoch 34
+Validation in epoch 35
+Validation in epoch 36
+Validation in epoch 37
+Validation in epoch 38
+Validation in epoch 39
+Validation in epoch 40
+Validation in epoch 41
+Validation in epoch 42
+Validation in epoch 43
+Validation in epoch 44
+Validation in epoch 45
+Validation in epoch 46
+Validation in epoch 47
+Validation in epoch 48
+Validation in epoch 49
+Validation in epoch 50
+Validation in epoch 51
+Validation in epoch 52
+Validation in epoch 53
+Validation in epoch 54
+Validation in epoch 55
+Validation in epoch 56
+Validation in epoch 57
+Validation in epoch 58
+Validation in epoch 59
+Validation in epoch 60
+Validation in epoch 61
+Validation in epoch 62
+Validation in epoch 63
+Validation in epoch 64
+Validation in epoch 65
+Validation in epoch 66
+ls_eps=0.1
+Seed set to 1292632490
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+Validation in epoch 21
+Validation in epoch 22
+Validation in epoch 23
+Validation in epoch 24
+Validation in epoch 25
+ls_eps=0.1
+Seed set to 2124297904
+Constructing PBLD embeddings
+add_scaling_layer=True
+activation='ReLU'
+scale_lr_factor=96
+ls_eps=0.1
+gpu_devices []
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+optimizer_kwargs={'lr': 0.0003121273641315169, 'weight_decay': 1.2260352006404615e-06, 'betas': (0.9, 0.95)}
+Validation in epoch 0
+Validation in epoch 0
+Validation in epoch 1
+Validation in epoch 2
+Validation in epoch 3
+Validation in epoch 4
+Validation in epoch 5
+Validation in epoch 6
+Validation in epoch 7
+Validation in epoch 8
+Validation in epoch 9
+Validation in epoch 10
+Validation in epoch 11
+Validation in epoch 12
+Validation in epoch 13
+Validation in epoch 14
+Validation in epoch 15
+Validation in epoch 16
+Validation in epoch 17
+Validation in epoch 18
+Validation in epoch 19
+Validation in epoch 20
+[rank: 0] Received SIGTERM: 15

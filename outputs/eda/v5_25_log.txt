@@ -1,0 +1,29 @@
+
+======================================================================
+5 FOLDS (repeat 1)
+======================================================================
+  fold 1/5  ICL=7.897  ICL-PL=7.754  PFN35=7.816  PFN35-PL=7.577  PFN35-PL(icl labels)=7.697  SVR=9.038
+  fold 2/5  ICL=6.916  ICL-PL=6.716  PFN35=7.046  PFN35-PL=6.614  PFN35-PL(icl labels)=6.640  SVR=7.177
+  fold 3/5  ICL=7.228  ICL-PL=6.850  PFN35=6.873  PFN35-PL=7.018  PFN35-PL(icl labels)=6.985  SVR=7.315
+  fold 4/5  ICL=7.182  ICL-PL=7.027  PFN35=7.663  PFN35-PL=7.492  PFN35-PL(icl labels)=7.544  SVR=7.911
+  fold 5/5  ICL=8.333  ICL-PL=8.367  PFN35=8.236  PFN35-PL=7.967  PFN35-PL(icl labels)=7.992  SVR=8.031
+
+======================================================================
+RESULTS on the 382 rows of repeat 1
+======================================================================
+  ICL                    RMSE=7.5289  vs ICL-PL: mean fold diff=+0.1686 better folds=1/5
+  ICL-PL                 RMSE=7.3687  vs ICL-PL: mean fold diff=+0.0000 better folds=0/5
+  PFN35                  RMSE=7.5429  vs ICL-PL: mean fold diff=+0.1839 better folds=1/5
+  PFN35-PL               RMSE=7.3474  vs ICL-PL: mean fold diff=-0.0092 better folds=3/5
+  PFN35-PL(icl labels)   RMSE=7.3871  vs ICL-PL: mean fold diff=+0.0291 better folds=3/5
+  SVR                    RMSE=7.9231  vs ICL-PL: mean fold diff=+0.5516 better folds=1/5
+  residual corr ICL-PL vs PFN35-PL: 0.97
+
+======================================================================
+SIMPLE BLENDS (fixed weights, no fitting -> no optimism)
+======================================================================
+  v3: 0.77 ICL-PL + 0.23 SVR                     RMSE=7.2638  folds better than v3: 0/5
+  0.5 ICL-PL + 0.5 PFN35-PL                      RMSE=7.3025  folds better than v3: 2/5
+  0.385/0.385 ICL-PL/PFN35-PL + 0.23 SVR         RMSE=7.2103  folds better than v3: 3/5
+  0.385/0.385 ICL-PL/PFN35-PL(icl) + 0.23 SVR    RMSE=7.2328  folds better than v3: 3/5
+[fig] outputs/eda/v5_25_pfn35_pl.png

@@ -1,0 +1,37 @@
+
+======================================================================
+AUC for the tail question (per repeat mean)
+======================================================================
+  y > 65 (n=46): regression blend AUC = 0.852
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+      TabICL-clf   AUC = 0.810 (-0.042)
+      logistic     AUC = 0.749 (-0.103)
+      SVC-rbf      AUC = 0.782 (-0.070)
+  y > 70 (n=26): regression blend AUC = 0.868
+      TabICL-clf   AUC = 0.802 (-0.066)
+      logistic     AUC = 0.722 (-0.146)
+      SVC-rbf      AUC = 0.813 (-0.056)
+  y > 75 (n=19): regression blend AUC = 0.888
+      TabICL-clf   AUC = 0.956 (+0.067)
+      logistic     AUC = 0.754 (-0.135)
+      SVC-rbf      AUC = 0.899 (+0.011)
+
+======================================================================
+STACKING TEST: nested linear regression on [blend, tail probability] vs blend alone (per repeat)
+======================================================================
+  blend alone: 7.3985
+  + P(y>65) from TabICL-clf  : 7.4676 (+0.0691)
+  + P(y>65) from logistic    : 7.4359 (+0.0374)
+  + P(y>65) from SVC-rbf     : 7.4957 (+0.0972)
+  + P(y>70) from TabICL-clf  : 7.4628 (+0.0642)
+  + P(y>70) from logistic    : 7.4335 (+0.0350)
+  + P(y>70) from SVC-rbf     : 7.4910 (+0.0925)
+  + P(y>75) from TabICL-clf  : 7.4548 (+0.0563)
+  + P(y>75) from logistic    : 7.4396 (+0.0411)
+  + P(y>75) from SVC-rbf     : 7.4790 (+0.0805)
+[fig] outputs/eda/v7_36_tail_clf.png

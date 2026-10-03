@@ -1,0 +1,17 @@
+
+======================================================================
+SWEEP on repeat 1 (5 folds): activation x hidden units
+======================================================================
+  act=identity  K=24  CV RMSE=10.6481
+  act=tanh      K= 8  CV RMSE=9.7752
+  act=tanh      K=16  CV RMSE=9.7443
+  act=tanh      K=24  CV RMSE=9.4084
+  act=unbound   K= 8  CV RMSE=11.6227
+  act=unbound   K=16  CV RMSE=11.4725
+  act=unbound   K=24  CV RMSE=11.4635
+  act=monoPL    K= 8  CV RMSE=10.0011
+  act=monoPL    K=16  CV RMSE=9.7967
+  act=monoPL    K=24  CV RMSE=9.3426
+
+  references on the same folds: TabICL plain 7.525, linear OLS ~10.7, best blend ~7.2
+[fig] outputs/eda/v8_40_structured.png

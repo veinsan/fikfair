@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+======================================================================
+TabDPT on the shared 5x3 folds
+======================================================================
+  TabDPT         RMSE=7.8043  resid-corr vs TabICL=0.973  vs SVR=0.888  (184s)
+  TabDPT(qnorm)  RMSE=8.2935  resid-corr vs TabICL=0.958  vs SVR=0.886  (688s)

@@ -1,0 +1,43 @@
+
+======================================================================
+CONTROLS
+======================================================================
+  ICL[seed 43] (control-1)           RMSE=7.6101  (41s)
+  ICL-bag4 (v2 model)                RMSE=7.6123  (202s)
+  SVR-multiPCA                       RMSE=8.1136  (1s)
+
+======================================================================
+PSEUDO-LABEL VARIANTS (all 4-seed bagged)
+======================================================================
+  ICL-bag4[PL halves]                RMSE=7.5467  (627s)
+  ICL-bag4[PL 4-split]               RMSE=7.5218  (1081s)
+  ICL-bag4[blend-PL halves]          RMSE=7.5533  (594s)
+  ICL-bag4[blend-PL halves 2 rounds] RMSE=7.5402  (976s)
+
+======================================================================
+PAIRED PER-FOLD COMPARISON vs ICL-bag4 (negative = better)
+======================================================================
+  PL halves                  RMSE=7.5467  mean diff=-0.0671  better folds=10/15  worst=+0.179
+  PL 4-split                 RMSE=7.5218  mean diff=-0.0888  better folds=12/15  worst=+0.232
+  blend-PL halves            RMSE=7.5533  mean diff=-0.0610  better folds=10/15  worst=+0.156
+  blend-PL halves 2 rounds   RMSE=7.5402  mean diff=-0.0732  better folds=10/15  worst=+0.179
+
+======================================================================
+IN THE BLEND: 0.725/0.275-style NNLS with SVR, nested 10-fold, 5 seeds
+======================================================================
+  v2 : ICL-bag4 + SVR           nested=7.3963
+  PL halves                  + SVR  nested=7.3377 (sd 0.0078)
+  PL 4-split                 + SVR  nested=7.3156 (sd 0.0073)
+  blend-PL halves            + SVR  nested=7.3520 (sd 0.0077)
+  blend-PL halves 2 rounds   + SVR  nested=7.3336 (sd 0.0074)
+
+======================================================================
+WHERE DOES IT HELP? improvement by distance to nearest TRAINING row
+======================================================================
+                 mean  count
+bin                         
+(0.202, 0.798]  0.021     96
+(0.798, 1.205]  1.073     95
+(1.205, 1.767]  3.350     95
+(1.767, 5.631]  1.293     96
+[fig] outputs/eda/v3_17_pseudo_label.png

@@ -1,0 +1,33 @@
+
+======================================================================
+VISUAL CHECK: marginal distributions per view (first 6 columns)
+======================================================================
+[fig] outputs/eda/v3_15_view_marginals.png
+
+======================================================================
+TabICLv2(norm=none) PER VIEW (5x3 KFold)
+======================================================================
+  ICL[raw]                           RMSE=7.6007  (36s)
+  ICL[pca24]                         RMSE=7.7172  (101s)
+  ICL[pca24_white]                   RMSE=7.7172  (124s)
+  ICL[ica24]                         RMSE=7.9611  (110s)
+  ICL[rot0]                          RMSE=7.6675  (110s)
+  ICL[rot1]                          RMSE=7.6998  (109s)
+  ICL[rot2]                          RMSE=7.6007  (124s)
+  ICL[rot3]                          RMSE=7.5366  (125s)
+
+======================================================================
+RESIDUAL CORRELATION vs RAW VIEW + PAIRWISE BLEND raw/view (50:50)
+======================================================================
+  pca24        resid-corr=0.961  RMSE(view)=7.5321  RMSE(0.5 raw + 0.5 view)=7.4018   (raw alone 7.4181)
+  pca24_white  resid-corr=0.961  RMSE(view)=7.5321  RMSE(0.5 raw + 0.5 view)=7.4018   (raw alone 7.4181)
+  ica24        resid-corr=0.919  RMSE(view)=7.7931  RMSE(0.5 raw + 0.5 view)=7.4491   (raw alone 7.4181)
+  rot0         resid-corr=0.992  RMSE(view)=7.4806  RMSE(0.5 raw + 0.5 view)=7.4338   (raw alone 7.4181)
+  rot1         resid-corr=0.991  RMSE(view)=7.5306  RMSE(0.5 raw + 0.5 view)=7.4572   (raw alone 7.4181)
+  rot2         resid-corr=0.990  RMSE(view)=7.4496  RMSE(0.5 raw + 0.5 view)=7.4161   (raw alone 7.4181)
+  rot3         resid-corr=0.988  RMSE(view)=7.3520  RMSE(0.5 raw + 0.5 view)=7.3616   (raw alone 7.4181)
+
+  average of 4 random rotations          RMSE=7.4204
+  raw + 4 rotations (equal weight)       RMSE=7.4133
+  all views averaged                      RMSE=7.3966
+[fig] outputs/eda/v3_15_views.png

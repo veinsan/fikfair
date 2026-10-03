@@ -1,0 +1,30 @@
+
+======================================================================
+BUILDING MEMBER OOFs (15 folds each)
+======================================================================
+  SVR-plateau (v6b)    RMSE=8.0907
+  SVR sqrt-target      RMSE=7.9860
+  SVR raw-target       RMSE=8.1240
+  SVR raw-24D view     RMSE=8.3498
+  SVR PCA-24 view      RMSE=9.0595
+  KRR log              RMSE=8.1905
+  KRR raw-target       RMSE=8.2511
+  kNN-7 log            RMSE=8.8540
+  kNN-20 log           RMSE=9.9808
+  GP Matern32 log      RMSE=8.2522
+  ExtraTrees           RMSE=8.8921
+
+======================================================================
+BLEND VALUE on top of v6b (reference pooled 7.2552 | per-repeat 7.4163)
+======================================================================
+  SVR sqrt-target      corr FM=0.870 SVR=0.989 | v6b+this: pooled 7.2570 (+0.0018) per-rep 7.4294 (+0.0131) | replaces SVR: 7.2729 / 7.4300
+  SVR raw-target       corr FM=0.868 SVR=0.963 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4318 (+0.0155) | replaces SVR: 7.3002 / 7.4591
+  SVR raw-24D view     corr FM=0.850 SVR=0.821 | v6b+this: pooled 7.2840 (+0.0288) per-rep 7.4399 (+0.0236) | replaces SVR: 7.3212 / 7.4845
+  SVR PCA-24 view      corr FM=0.790 SVR=0.864 | v6b+this: pooled 7.2629 (+0.0077) per-rep 7.4370 (+0.0207) | replaces SVR: 7.3122 / 7.4772
+  KRR log              corr FM=0.863 SVR=0.977 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4236 (+0.0073) | replaces SVR: 7.3083 / 7.4647
+  KRR raw-target       corr FM=0.872 SVR=0.940 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4231 (+0.0068) | replaces SVR: 7.3163 / 7.4777
+  kNN-7 log            corr FM=0.829 SVR=0.827 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4274 (+0.0111) | replaces SVR: 7.3269 / 7.5058
+  kNN-20 log           corr FM=0.755 SVR=0.772 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4264 (+0.0101) | replaces SVR: 7.3032 / 7.4917
+  GP Matern32 log      corr FM=0.877 SVR=0.943 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4195 (+0.0032) | replaces SVR: 7.3265 / 7.4854
+  ExtraTrees           corr FM=0.859 SVR=0.792 | v6b+this: pooled 7.2552 (+0.0000) per-rep 7.4265 (+0.0102) | replaces SVR: 7.3030 / 7.4913
+[fig] outputs/eda/v7_33_members.png

@@ -1,0 +1,38 @@
+
+======================================================================
+RUNNING 15 folds
+======================================================================
+  fold 1/15 done
+  fold 2/15 done
+  fold 3/15 done
+  fold 4/15 done
+  fold 5/15 done
+  fold 6/15 done
+  fold 7/15 done
+  fold 8/15 done
+  fold 9/15 done
+  fold 10/15 done
+  fold 11/15 done
+  fold 12/15 done
+  fold 13/15 done
+  fold 14/15 done
+  fold 15/15 done
+
+======================================================================
+SINGLE MODELS (RMSE averaged over repeats)
+======================================================================
+  SVR        RMSE=8.1136
+  SVR-PL     RMSE=8.0377
+  ICL-PL r1  RMSE=7.5154
+  ICL-PL r2  RMSE=7.5179
+  residual corr SVR vs ICL-PL r1   : 0.861
+  residual corr SVR-PL vs ICL-PL r1: 0.865
+
+======================================================================
+BLENDS (nested NNLS, 5 outer seeds)
+======================================================================
+  v3: ICL-PL r1 + SVR          nested=7.3082
+  ICL-PL r1 + SVR-PL           nested=7.3028
+  ICL-PL r1 + SVR + SVR-PL     nested=7.3103
+  ICL-PL r2 + SVR              nested=7.3024
+[fig] outputs/eda/v4_23_extensions.png

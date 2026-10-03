@@ -1,0 +1,365 @@
+
+##### cell 11 #####
+[0s]
+
+##### cell 13 #####
+[0s]
+
+##### cell 15 #####
+[2s]
+
+##### cell 17 #####
+[0s]
+
+##### cell 19 #####
+data: ../data | devices: ['cpu'] | TabPFN token set: True
+[0s]
+
+##### cell 21 #####
+Train: (382, 26)  Test: (96, 25)  Template: (96, 2)  Features: 24
+[0s]
+
+##### cell 25 #####
+missing (train/test)       : 0 0
+duplicate feature rows      : 0 0
+train-test identical rows   : 0
+unique values per feature   : 382 to 382
+ids cover 1..478 exactly    : True
+spearman(record_id, target) : 0.049 (p=0.34)
+lag-1 autocorrelation of target along id order: -0.026 (permutation 95% band -0.105 to 0.098)
+[0s]
+
+##### cell 28 #####
+count    382.000
+mean      51.204
+std       12.906
+min       32.586
+25%       39.689
+50%       50.256
+75%       60.166
+max      100.440
+skew=0.748  excess kurtosis=0.511  shapiro p=2.34e-11
+predict-the-mean RMSE = 12.889
+[0s]
+
+##### cell 31 #####
+top correlations with target:
+feature_09    0.391
+feature_15   -0.376
+feature_12   -0.372
+feature_17    0.352
+feature_13    0.348
+feature_07   -0.332
+feature_03   -0.259
+feature_23    0.248
+
+PCA explained variance % (first 8): [40.39 25.9  14.03 11.03  2.4   1.67  1.43  0.9 ]
+eigenvalues above the Marchenko-Pastur noise edge (1.50): 4
+condition number: 3397
+[1s]
+
+##### cell 34 #####
+linear (Ridge)     CV RMSE = 10.733
+additive splines   CV RMSE = 9.360
+[2s]
+
+##### cell 37 #####
+features with KS p < 0.05: 9 of 24
+adversarial AUC (logistic): 0.594
+adversarial AUC (random forest): 0.534
+[3s]
+
+##### cell 40 #####
+train -> train 1-NN distance percentiles: [0.38 0.77 1.15 1.67 2.93]
+test  -> train 1-NN distance percentiles: [0.35 0.86 1.24 1.9  3.1 ]
+1-NN leave-one-out RMSE: 10.117
+radius 0.5: 351 similarity groups, largest group = 6 rows
+radius 1.0: 255 similarity groups, largest group = 41 rows
+radius 1.5: 141 similarity groups, largest group = 139 rows
+[0s]
+
+##### cell 45 #####
+5 folds, validation size 77
+[0s]
+
+##### cell 47 #####
+train only : mean range [-0.062, 0.050]  sd range [0.970, 1.018]
+train+test : mean range [-0.0011, 0.0011]  sd range [0.9990, 1.0011]
+
+smallest 8 eigenvalues : [0.0187 0.0123 0.0106 0.0093 0.0064 0.0055 0.0045 0.0029]
+log10 step between them: [-0.18 -0.07 -0.06 -0.16 -0.07 -0.09 -0.19]
+ICA-24 (logcosh): 1 of 24 sources sub-Gaussian, median kurtosis 7.39
+ICA-24 (cube): 1 of 24 sources sub-Gaussian, median kurtosis 8.56
+[1s]
+
+##### cell 50 #####
+mahalanobis         -0.390
+maha_major_pc1_4    -0.333
+maha_minor_pc5_24   -0.384
+euclid              -0.356
+max_abs_z           -0.355
+best single raw feature |spearman|: 0.42
+[0s]
+
+##### cell 52 #####
+Ridge      base=10.6486  +typicality=10.3855  delta=-0.2631
+SVR(log)   base=7.9972  +typicality=8.1548  delta=+0.1575
+CatBoost   base=8.8907  +typicality=8.6196  delta=-0.2712
+TabICLv2   base=7.5555  +typicality=7.5249  delta=-0.0306
+[34s]
+
+##### cell 55 #####
+SIR  eigenvalues: [0.473 0.194 0.147 0.102 0.076 0.065]
+     null 95%   : [0.163 0.127 0.105 0.084 0.068 0.056] -> significant: 6
+SAVE eigenvalues: [3.49  2.282 2.013 1.865 1.544 1.509]
+     null 95%   : [2.022 1.709 1.554 1.441 1.342 1.264] -> significant: 6
+
+SVR on 3 SIR + 0 SAVE directions: RMSE=10.2664
+SVR on 3 SIR + 3 SAVE directions: RMSE=9.8834
+SVR on 6 SIR + 6 SAVE directions: RMSE=9.5231
+[0s]
+
+##### cell 60 #####
+                     SVR    kNN  ExtraTrees    mean
+pca-scores k=12    8.124  9.022       8.917   8.688
+ica k=10           8.267  8.723       9.474   8.822
+pca-scores k=8     8.451  8.948       9.093   8.830
+raw                8.489  9.250       8.852   8.864
+pca-denoise k=12   8.593  9.239       8.917   8.917
+quantile-normal    8.569  9.287       8.932   8.929
+pca-denoise k=8    8.963  9.332       8.954   9.083
+ica k=6            8.871  8.987       9.401   9.086
+pca-denoise k=4   10.655  9.899       9.478  10.011
+pca-scores k=4    10.313  9.858       9.878  10.016
+[11s]
+
+##### cell 62 #####
+excess kurtosis per source (uniform = -1.2): [ 4.55  1.69 -0.96  5.33  7.25  1.27  9.35  2.2   2.26  2.95]
+max |spearman| with target, raw features: 0.391 | ICA sources: 0.259
+[1s]
+
+##### cell 65 #####
+SVR eps=1.0, y                    8.151
+SVR eps=1.0, log y   (broken)    12.615
+SVR z-scaled, y                   8.124
+SVR z-scaled, log y  (fixed)      8.023
+kNN, y                            9.022
+kNN, log y                        8.866
+ExtraTrees, y                     8.852
+ExtraTrees, log y                 9.224
+[2s]
+
+##### cell 68 #####
+                     42      7       123
+single k=12       8.1336  8.2057  7.9562
+average k=10..20  8.1136  8.1339  7.9435
+[2s]
+
+##### cell 71 #####
+raw    RMSE=7.5251  residual corr vs raw=1.000
+pca24  RMSE=7.6241  residual corr vs raw=0.952
+rot0   RMSE=7.5429  residual corr vs raw=0.987
+rot1   RMSE=7.5634  residual corr vs raw=0.989
+average of all views (bagged OOF) RMSE=7.4738  | raw alone 7.5251
+[52s]
+
+##### cell 74 #####
+no jitter   RMSE=7.5251
+sigma=0.03  RMSE=7.4755
+sigma=0.1   RMSE=7.7098
+sigma=0.3   RMSE=8.8195
+jitter norm at sigma=0.1: 0.49  vs median nearest-neighbour distance 1.15
+[123s]
+
+##### cell 77 #####
+raw y                       RMSE=7.5251
+log y, exp(mean)  (v1 way)  RMSE=7.6993
+log y, via quantiles        RMSE=7.5820
+[39s]
+
+##### cell 83 #####
+TabICLv2 on cpu | TabPFNv2 and TabDPT on cpu
+[0s]
+
+##### cell 85 #####
+Ridge         RMSE=10.6486  (0s)
+CatBoost      RMSE=8.8907  (7s)
+SVR-multiPCA  RMSE=7.9231  (0s)
+SVR-plateau   RMSE=7.9603  (1s)
+TabPFNv2      RMSE=7.6939  (118s)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+TabDPT        RMSE=7.6079  (26s)
+TabICLv2-v1   RMSE=7.5555  (19s)
+TabICLv2-v2   RMSE=7.5279  (21s)
+TabICLv2-PL   RMSE=7.3616  (99s)
+TabPFN35-PL   RMSE=7.6393  (296s)
+residual corr TabICLv2-PL vs TabPFN35-PL: 0.948
+
+                 RMSE  MAE (bagged OOF)   seconds
+model                                            
+TabICLv2-PL    7.3616            5.0522   98.7206
+TabICLv2-v2    7.5279            5.1601   21.2166
+TabICLv2-v1    7.5555            5.1873   18.6373
+TabDPT         7.6079            5.1891   26.4629
+TabPFN35-PL    7.6393            5.2705  295.8329
+TabPFNv2       7.6939            5.3505  117.8778
+SVR-multiPCA   7.9231            5.4423    0.3143
+SVR-plateau    7.9603            5.4648    1.3655
+CatBoost       8.8907            6.3098    6.5480
+Ridge         10.6486            8.0319    0.0386
+[587s]
+
+##### cell 87 #####
+   zero-shot  ft lr=1e-5  ft lr=3e-6
+0      7.957       7.981       7.964
+1      6.973       6.973       6.973
+2      7.125       7.125       7.125
+3      7.228       7.351       7.258
+4      8.259       8.259       8.259
+
+mean RMSE: {'zero-shot': 7.5084, 'ft lr=1e-5': 7.5377, 'ft lr=3e-6': 7.5158}
+ft lr=1e-5: mean difference +0.0293, better on 0 of 5 folds
+ft lr=3e-6: mean difference +0.0074, better on 0 of 5 folds
+[228s]
+
+##### cell 91 #####
+              RMSE  residual corr vs TabICLv2-PL
+checkpoint                                      
+TabPFN-2.5  7.6416                        0.9498
+[36s]
+
+##### cell 94 #####
+rbf        CV RMSE=7.9376
+matern32   CV RMSE=8.0161
+matern12   CV RMSE=8.5200
+laplacian  CV RMSE=8.5016
+[1s]
+
+##### cell 97 #####
+ length-scale   C  SVR RMSE  residual corr vs FM  blend RMSE
+          0.7   3    8.1347               0.8532      7.3817
+          0.7  10    7.8291               0.8416      7.2864
+          0.7  30    8.2092               0.8021      7.3241
+          0.7 100    8.7774               0.7614      7.3671
+          1.0   3    7.9231               0.8541      7.3256
+          1.0  10    7.9376               0.8389      7.3031
+          1.0  30    8.2481               0.8115      7.3360
+          1.0 100    8.6384               0.7747      7.3600
+          1.4   3    8.0555               0.8480      7.3387
+          1.4  10    8.1819               0.8335      7.3439
+          1.4  30    8.3535               0.8078      7.3459
+          1.4 100    8.9039               0.7693      7.3880
+
+plateau average (SVR-plateau) blend RMSE: 7.3056  | version 5 SVR (C=3): 7.3256
+[4s]
+
+##### cell 100 #####
+Ridge         GroupKFold RMSE=11.5836  |  random KFold RMSE=10.6486
+CatBoost      GroupKFold RMSE=9.6804  |  random KFold RMSE=8.8907
+SVR-multiPCA  GroupKFold RMSE=8.6806  |  random KFold RMSE=7.9231
+TabICLv2-v1   GroupKFold RMSE=7.9519  |  random KFold RMSE=7.5555
+TabICLv2-v2   GroupKFold RMSE=7.9363  |  random KFold RMSE=7.5279
+TabICLv2-PL   GroupKFold RMSE=8.0493  |  random KFold RMSE=7.3616
+TabPFN35-PL   GroupKFold RMSE=8.1697  |  random KFold RMSE=7.6393
+[309s]
+
+##### cell 105 #####
+[0s]
+
+##### cell 108 #####
+                               candidate  nested RMSE  sd over seeds  adv-weighted RMSE  P(better) bootstrap  P(win) public 29  P(win) private 67
+                        v1: TabICL + SVR       7.4157         0.0071             7.2199               0.1475            0.3918             0.3252
+                    v2: TabICL-bag + SVR       7.3968         0.0066             7.2262               0.1950            0.4172             0.3675
+                     v3: TabICL-PL + SVR       7.2829         0.0066             7.1227               0.7445            0.6040             0.6345
+                         v3 + TabICL-bag       7.2829         0.0066             7.1227               0.7540            0.6222             0.6472
+             v5: ICL-PL + PFN35-PL + SVR       7.3067         0.0131             7.1433               0.6592            0.6010             0.6052
+        v5: mean(ICL-PL, PFN35-PL) + SVR       7.3256         0.0084             7.1418               0.0000            0.0000             0.0000
+v6: mean(ICL-PL, PFN35-PL) + SVR-plateau       7.3056         0.0038             7.1298               0.6860            0.5182             0.5540
+                             v2 + TabDPT       7.4276         0.0131             7.2456               0.1222            0.3862             0.3170
+                    v2 + TabDPT + TabPFN       7.4598         0.0158             7.2644               0.0512            0.3470             0.2388
+                              all models       7.3303         0.0143             7.1538               0.5875            0.5675             0.5692
+
+chosen: v3: TabICL-PL + SVR
+TabICLv2-PL     0.689
+SVR-multiPCA    0.311
+[1s]
+
+##### cell 111 #####
+                  mean_pred  mean_y   n   gap
+bin                                          
+(33.77, 38.344]       36.53   35.63  39 -0.90
+(38.344, 40.707]      39.51   39.11  38 -0.40
+(40.707, 44.024]      42.52   43.38  38  0.86
+(44.024, 46.965]      45.30   43.85  38 -1.45
+(46.965, 51.24]       49.09   47.07  38 -2.02
+(51.24, 54.811]       52.94   53.82  38  0.88
+(54.811, 57.479]      56.20   56.56  38  0.36
+(57.479, 60.216]      58.78   63.01  38  4.23
+(60.216, 62.777]      61.44   61.86  38  0.42
+(62.777, 78.944]      67.41   67.71  39  0.30
+
+slope of y on nested blend = 1.094
+nested RMSE without stretch = 7.2886 | with stretch = 7.2841
+[0s]
+
+##### cell 114 #####
+nugget (extrapolated to d=0) = 9.9  -> irreducible RMSE about 3.15
+blend MSE = 52.6, reached by the variogram at distance about 1.07
+median nearest-neighbour distance in train = 1.15
+Ridge     CV R2 on blend residuals = -0.0230
+kNN(15)   CV R2 on blend residuals = -0.1481
+CatBoost  CV R2 on blend residuals = -0.0750
+[1s]
+
+##### cell 117 #####
+                 mean  count
+bin                         
+(0.202, 0.798]  1.377     96
+(0.798, 1.205]  3.605     95
+(1.205, 1.767]  2.929     95
+(1.767, 5.631]  2.008     96
+[0s]
+
+##### cell 120 #####
+test          median distance to labelled=1.242  to other query=1.832  | KS vs test: 0.000 / 0.000
+random folds  median distance to labelled=1.205  to other query=1.807  | KS vs test: 0.079 / 0.072
+group folds   median distance to labelled=1.465  to other query=1.475  | KS vs test: 0.385 / 0.304
+[0s]
+
+##### cell 123 #####
+ n_labelled  plain  pseudo-label  folds PL better    gain
+        120 9.5404        9.6516              0.4 -0.1112
+        180 8.7374        8.5855              0.8  0.1519
+        240 8.0773        7.9548              1.0  0.1225
+        306 7.5448        7.3920              0.8  0.1528
+[225s]
+
+##### cell 126 #####
+              random folds  group folds  gain random  gain group
+plain               7.5279       7.9363       0.0000      0.0000
+PL keep=1.0         7.3616       8.0493       0.1663     -0.1129
+PL keep=0.75        7.4460       7.9544       0.0819     -0.0181
+PL keep=0.5         7.4855       7.9297       0.0424      0.0066
+[398s]
+
+##### cell 129 #####
+OOF RMSE 7.253
+public (29 rows)  90% range: 4.84 to 9.88
+private (67 rows) 90% range: 5.68 to 8.87
+[0s]
+
+##### cell 133 #####
+  record_id  prediction
+0     D0263   86.139482
+1     D0280   76.111362
+2     D0206   41.630375
+3     D0133   38.628962
+4     D0352   61.785296
+
+test prediction mean 50.15  range 34.77 to 86.14
+train OOF blend mean 50.98  range 33.77 to 78.94
+vs v2: TabICL-bag + SVR  : corr=0.9989  RMS difference=0.514  max |difference|=2.20
+vs v3: TabICL-PL + SVR   : corr=1.0000  RMS difference=0.000  max |difference|=0.00
+vs v5: mean(ICL-PL, PFN35-PL) + SVR: corr=0.9976  RMS difference=0.753  max |difference|=3.50
+[0s]
+ALL CELLS OK

@@ -1,0 +1,11 @@
+Prior Labs token available: False
+
+======================================================================
+ZOO (reference: v3 blend ICL-PL + SVR nested = 7.3156)
+======================================================================
+  TabPFN-v2[plain]           RMSE=7.9738  resid-corr vs ICL-PL=0.955  blend(ICL-PL+SVR+this)=7.3156 (+0.0000)  [138s]
+  TabPFN-v2[PL]              RMSE=7.8949  resid-corr vs ICL-PL=0.956  blend(ICL-PL+SVR+this)=7.3167 (+0.0011)  [707s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  TabDPT[plain]              RMSE=7.8043  resid-corr vs ICL-PL=0.969  blend(ICL-PL+SVR+this)=7.3156 (+0.0000)  [70s]
+  TabDPT[PL]                 RMSE=7.6792  resid-corr vs ICL-PL=0.971  blend(ICL-PL+SVR+this)=7.3257 (+0.0101)  [329s]
+[fig] outputs/eda/v5_24_zoo.png

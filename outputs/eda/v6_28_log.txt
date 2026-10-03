@@ -1,0 +1,14 @@
+
+======================================================================
+SWEEP over k on repeat 1 (5 folds)
+======================================================================
+  k= all  RMSE=7.5251  folds=[7.957 6.973 7.125 7.228 8.259]  [10s]
+  k= 200  RMSE=7.6488  folds=[7.964 7.334 7.05  7.456 8.367]  [585s]
+  k= 100  RMSE=7.8865  folds=[8.187 7.418 7.029 7.428 9.186]  [391s]
+
+======================================================================
+DIVERSITY: residual correlation of local vs global, and 50:50 average
+======================================================================
+  k=200  resid-corr vs global=0.988  RMSE(0.5 global + 0.5 local)=7.5643  (global alone 7.5251)
+  k=100  resid-corr vs global=0.969  RMSE(0.5 global + 0.5 local)=7.6454  (global alone 7.5251)
+[fig] outputs/eda/v6_28_local_context.png

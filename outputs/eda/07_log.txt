@@ -1,0 +1,40 @@
+
+======================================================================
+RANDOM 5x3 KFOLD
+======================================================================
+  Ridge            RMSE=10.7674  fold-sd=0.827  MAE=8.030  (0s)
+  kNN(pca12,log)   RMSE=8.7882  fold-sd=0.879  MAE=6.106  (0s)
+  SVR(pca12,log)   RMSE=8.1597  fold-sd=0.730  MAE=5.505  (0s)
+  GP-ARD           RMSE=9.0145  fold-sd=0.805  MAE=6.169  (347s)
+  GP-ARD(log)      RMSE=8.5808  fold-sd=0.730  MAE=5.641  (396s)
+  ExtraTrees       RMSE=8.8921  fold-sd=0.798  MAE=6.452  (4s)
+  LightGBM         RMSE=9.0182  fold-sd=0.775  MAE=6.402  (8s)
+  CatBoost         RMSE=8.8969  fold-sd=0.820  MAE=6.240  (20s)
+  TabPFNv2         RMSE=7.9738  fold-sd=0.789  MAE=5.378  (130s)
+  TabICLv2         RMSE=7.6337  fold-sd=0.784  MAE=5.058  (41s)
+  TabICLv2(log)    RMSE=7.7929  fold-sd=0.741  MAE=4.956  (38s)
+
+======================================================================
+LEADERBOARD (all models run so far, RMSE of OOF averaged over repeats)
+======================================================================
+TabICLv2           7.4476
+TabICLv2(log)      7.6312
+TabPFNv2           7.7935
+SVR(pca12,log)     8.0205
+GP-ARD(log)        8.2698
+GP-ARD             8.5933
+kNN(pca12,log)     8.6627
+CatBoost           8.7466
+ExtraTrees         8.8072
+LightGBM           8.8443
+Ridge             10.7102
+const-mean: 12.8891
+
+======================================================================
+CV DESIGN CHECK: similarity GroupKFold (radius 1.0 clusters kept in one fold)
+======================================================================
+  Ridge        GroupKFold RMSE=11.5836  vs random KFold 10.7102
+  GP-ARD       GroupKFold RMSE=9.7835  vs random KFold 8.5933
+  CatBoost     GroupKFold RMSE=9.6804  vs random KFold 8.7466
+  TabICLv2     GroupKFold RMSE=7.9519  vs random KFold 7.4476
+[fig] outputs/eda/07_model_leaderboard.png

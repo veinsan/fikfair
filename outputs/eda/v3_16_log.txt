@@ -1,0 +1,35 @@
+
+======================================================================
+A. TTA JITTER (K=16 copies per query row)
+======================================================================
+  ICL[tta s=0.0]                     RMSE=7.6007  (117s)
+  ICL[tta s=0.03]                    RMSE=7.5758  (234s)
+  ICL[tta s=0.06]                    RMSE=7.6364  (229s)
+  ICL[tta s=0.1]                     RMSE=7.7823  (241s)
+  ICL[tta s=0.2]                     RMSE=8.3592  (117s)
+  ICL[tta s=0.3]                     RMSE=8.9417  (129s)
+    sigma=0.0   RMSE=7.6007  delta=+0.0000
+    sigma=0.03  RMSE=7.5758  delta=-0.0249
+    sigma=0.06  RMSE=7.6364  delta=+0.0357
+    sigma=0.1   RMSE=7.7823  delta=+0.1815
+    sigma=0.2   RMSE=8.3592  delta=+0.7585
+    sigma=0.3   RMSE=8.9417  delta=+1.3410
+
+======================================================================
+VISUAL CHECK of the jitter: nearest-neighbour distance vs sigma
+======================================================================
+[fig] outputs/eda/v3_16_tta.png
+
+======================================================================
+B. TARGET TRANSFORMS, back-transformed via predictive quantiles
+======================================================================
+  ICL[y, mean]                       RMSE=7.6007  (47s)
+  ICL[y, mean of quantiles]          RMSE=7.5990  (44s)
+  ICL[log y, exp(mean)]  (v1 way)    RMSE=7.7685  (40s)
+  ICL[log y, via quantiles]          RMSE=7.6206  (50s)
+  ICL[rank-gauss y, via quantiles]   RMSE=7.6319  (43s)
+
+======================================================================
+C. TRANSDUCTIVE PSEUDO-LABELLING
+======================================================================
+  ICL[pseudo-label]                  RMSE=7.5118  (140s)
