@@ -1,0 +1,46 @@
+{
+  "selected": "kernel_a0.1_g2",
+  "full_training_cv": {
+    "baseline": 3.5197275595096684,
+    "narrow": 3.5402195198642414,
+    "wide": 3.5456434959189473,
+    "ridge3": 3.493873686794999,
+    "ridge30": 3.5505391742579833,
+    "quadratic_rank": 3.450582830460884,
+    "log_target": 3.525600307410184,
+    "residual_scaled": 3.590598874701069,
+    "kernel": 3.2863474876794507,
+    "smooth_curve": 3.4899007840310605,
+    "linear_target_curve": 3.4769104948548053,
+    "clip_features": 3.5208924091194627,
+    "kernel_a0.1_g1": 3.07508864700818,
+    "kernel_a0.1_g2": 3.012944017724594,
+    "kernel_a0.1_g4": 3.026028978753747,
+    "kernel_a0.3_g1": 3.1534530964976244,
+    "kernel_a0.3_g2": 3.061350681923012,
+    "kernel_a0.3_g4": 3.053296292851481,
+    "kernel_a1_g2": 3.1888230093695475,
+    "kernel_a1_g4": 3.1581874089670054
+  },
+  "v12_weight": 0.5,
+  "new_model_weight": 0.5,
+  "selection_seed": 6099,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "platform": "Linux-7.2.3-arch1-3-x86_64-with-glibc2.44",
+  "input_sha256": {
+    "/home/rian/Projects/fikfair/data/train.csv": "53b2442307c8cdc8d6e51923d0419c8dc008d268016f87756c1492972fc95399",
+    "/home/rian/Projects/fikfair/data/test.csv": "250e54e5c0a215d928db91fed64bb036808ed3148f1518ef1028a8c20eb42988",
+    "/home/rian/Projects/fikfair/data/submission_template.csv": "0636ae009a4ae69e60bdb24df68a4b7a918658725a31bee1bd52c7f9e128efb5",
+    "/home/rian/Projects/fikfair/outputs/fikfair_v12/submission_v12.csv": "f4f24e0cf5aa480b77d724f82b2befe69267492dfd06dcb352cff8eda11cb462"
+  },
+  "submission_sha256": "0bd8ba26554f5163d14bfedbc70b9a134cfa458505e268c6ffb105e6cd07af14",
+  "same_environment_repeat_identical": true,
+  "v12_public_reported_by_user": 1.82471357,
+  "v13_public": null
+}

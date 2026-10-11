@@ -170,3 +170,32 @@ Script di `eda/v8/`. Gambar `outputs/eda/v8_*.png`.
 | 44 mode target | Bimodal = rezim biner tersembunyi | Mode rendah 38.2±3.1 (31%), tinggi 57.1±11.2; AUC mode dari fitur 0.94; two-stage 7.93 vs 7.53 | Ditolak |
 
 **Penilaian setelah 8 round (~45 eksperimen):** tidak ada struktur sah di fitur yang mendekati RMSE 2.x. Dua penjelasan skor 2.28–2.72 yang konsisten dengan semua bukti: (a) probing public LB (29 baris; dengan 5 submit/hari target tiap baris public bisa direkonstruksi satu per satu dari selisih RMSE), atau (b) rekonstruksi target dari dataset publik. Keduanya dilarang (§11.2, §3) dan (a) tidak membantu private.
+
+---
+
+# v8: Round 9 — pseudo-label untuk anggota SVR
+
+Script di `eda/v9/`.
+
+| Script | Hipotesis | Hasil | Keputusan |
+|---|---|---|---|
+| 45 SVR-PL | SVR (anggota yang menggerakkan blend, kernel lokal) juga diuntungkan pseudo-label seperti FM; label first-pass = OOF FM di fold yang sama (tanpa bocor) | SVR sendiri 8.09 → 7.92; korelasi residual vs FM hampir sama (0.851→0.859); blend −0.018 pooled / −0.022 per-repeat; label dari blend v6b atau bobot 0.5 sedikit lebih kecil | Dipakai |
+| 46 split | Berapa pseudo row untuk SVR? | 2/4/8-split: −0.027/−0.018/−0.022 pooled (tidak monoton = noise partisi) | Rata-rata 2/4/8 |
+| 46 rata-rata split | Rata-rata menghapus noise partisi | pooled **7.2325 (−0.023)**, per-repeat 7.3877 (−0.029), lebih baik di 3/3 repeat; bootstrap P(better than v6b) **0.971**; P(win) public-29 0.62, private-67 0.69 | **v8** |
+
+---
+
+# Koreksi & temuan kebocoran urutan baris (4 Oktober 2026)
+
+- **Koreksi:** audit `record_id` di round 6 (script 29) hanya menguji urutan **angka ID**, bukan **posisi baris di file CSV**. Klaim round 8 bahwa skor 2.x hanya bisa dijelaskan oleh probing atau data eksternal **ditarik**.
+- **Temuan (audit `docs/score_gap_audit.md`, diverifikasi ulang):** Spearman(posisi baris train, target) = **−0.981** (baris pertama target 100.4, terakhir ~33). Spearman(posisi baris test, prediksi v8 dari fitur saja) = **−0.806** → test.csv kemungkinan besar juga terurut menurut target. Model posisi-saja (isotonic) mencapai RMSE diagnostik ~2.95–3.97. Ini penjelasan konkret skor 2.x.
+- **Status aturan:** `data/competition_rules.md` §10.9 — diskualifikasi untuk "tindakan lain yang secara substansial menghilangkan kebutuhan untuk menyelesaikan tugas prediksi sebagaimana dirancang". Memprediksi target dari urutan baris test (artefak pengurutan panitia, bukan fitur) termasuk kategori ini menurut pembacaan kami; Top-3 wajib verifikasi (§8). **Tidak dipakai** di submission; disarankan melapor ke panitia.
+- **Catatan waktu:** §9 menyebut periode submission berakhir **4 Oktober 2026 23:59 WIB**.
+
+## v9: pemakaian urutan baris (setelah konfirmasi panitia)
+
+Panitia mengonfirmasi bahwa memakai urutan baris file adalah bagian dari EDA/preprocessing peserta (aturan lokal di `data/competition_rules.md` berasal dari guidebook lama). Notebook `notebooks/v9.ipynb` = v8 + Section 8 "Row-Order Information":
+- EDA urutan: Spearman posisi–target (train), posisi–prediksi fitur (test, harus < −0.5 atau notebook berhenti), dan kesamaan drift fitur sepanjang file train vs test.
+- Simulasi split pemertahan urutan (300 × 80/20, posisi dinormalisasi per bagian) membandingkan: fitur saja, quantile map (posisi relatif → target train), proyeksi isotonic prediksi fitur, penataan ulang prediksi fitur, dan kombinasi NNLS yang di-cross-fit antar separuh split.
+- Prediksi akhir = kombinasi dengan bobot dari semua split, diterapkan ke urutan test.csv.
+Tidak dijalankan di lokal (instruksi); angka referensi dari audit: quantile map median ~3.97 di simulasi split independen.

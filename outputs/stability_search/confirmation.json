@@ -1,0 +1,64 @@
+{
+  "selected_per_fold": [
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10",
+    "local_linear_interaction1_ridge10"
+  ],
+  "scores": {
+    "v11": {
+      "repeat_rmse": [
+        3.1876732315295757,
+        3.5094583108154325,
+        3.324280860211514
+      ],
+      "mean_fold_rmse": 3.3030510913450204
+    },
+    "new_component": {
+      "repeat_rmse": [
+        3.105848604314958,
+        3.4172721580241228,
+        3.1688715867676067
+      ],
+      "mean_fold_rmse": 3.1922734559953665
+    },
+    "hedge": {
+      "repeat_rmse": [
+        3.066540066170384,
+        3.4121920538216637,
+        3.1813394461604716
+      ],
+      "mean_fold_rmse": 3.1789193437694356
+    }
+  },
+  "record_bootstrap_delta95": [
+    -0.18707984943238423,
+    -0.05381631565699582
+  ],
+  "fold_wins": 14,
+  "approximate_oof_sampling": {
+    "v11": {
+      "mean_absolute_gap": 0.6584742418442495,
+      "private_p95": 4.111152874233257,
+      "first38_records_rmse": 6.66360602813704,
+      "first38_records_sse_share": 0.39522759957462705
+    },
+    "v12": {
+      "mean_absolute_gap": 0.6396580307517359,
+      "private_p95": 3.9905406855003673,
+      "first38_records_rmse": 6.1359177862584495,
+      "first38_records_sse_share": 0.36049279407184176
+    }
+  }
+}

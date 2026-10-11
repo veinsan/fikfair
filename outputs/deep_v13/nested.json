@@ -1,0 +1,50 @@
+{
+  "choices": [
+    "kernel_a0.1_g1",
+    "kernel_a0.3_g4",
+    "kernel_a0.3_g2",
+    "kernel_a0.3_g1",
+    "kernel_a0.1_g2",
+    "kernel_a0.1_g1",
+    "kernel_a0.3_g1",
+    "kernel_a0.1_g4",
+    "residual_scaled",
+    "kernel_a0.1_g1",
+    "kernel_a0.1_g1",
+    "kernel_a0.1_g4",
+    "kernel",
+    "kernel_a0.1_g4",
+    "kernel_a0.3_g4"
+  ],
+  "scores": {
+    "v12": {
+      "mean_fold": 3.1789193437694356,
+      "repeats": [
+        3.066540066170384,
+        3.4121920538216637,
+        3.1813394461604716
+      ]
+    },
+    "new": {
+      "mean_fold": 3.0437360808298584,
+      "repeats": [
+        2.864907219680869,
+        3.369845426045426,
+        3.033234142859203
+      ]
+    },
+    "v13": {
+      "mean_fold": 3.015560519124817,
+      "repeats": [
+        2.870486279240582,
+        3.3078985510759464,
+        2.998310193138574
+      ]
+    }
+  },
+  "fold_wins": 15,
+  "conditional_record_bootstrap_delta95": [
+    -0.23693728250458396,
+    -0.07258806243067188
+  ]
+}

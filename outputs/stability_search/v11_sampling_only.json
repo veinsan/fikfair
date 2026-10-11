@@ -1,0 +1,19 @@
+{
+  "kind": "approximate resampling of archived v11 OOF across different folds",
+  "public_quantiles": [
+    2.2596269315730564,
+    3.209190911132126,
+    4.496520993748538
+  ],
+  "private_quantiles": [
+    2.6293030555896375,
+    3.2818785046314547,
+    4.0971436653376
+  ],
+  "absolute_gap_quantiles": [
+    0.548902097564703,
+    1.3649150196528526,
+    1.6506710927879626
+  ],
+  "fraction_private_worse": 0.53725
+}

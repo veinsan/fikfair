@@ -1,0 +1,24 @@
+{
+  "train_rows": 382,
+  "test_rows": 96,
+  "missing_train": 0,
+  "missing_test": 0,
+  "exact_train_duplicate_rows": 0,
+  "exact_test_duplicate_rows": 0,
+  "exact_train_test_pairs": 0,
+  "nearest_train_distance_quantiles": [
+    0.20373070491870315,
+    0.21201656968887939,
+    0.4513896154713708,
+    1.1583275016661094
+  ],
+  "nearest_test_distance_quantiles": [
+    0.17852639643531495,
+    0.1893258553810123,
+    0.5892784131887402,
+    1.2535530381614381
+  ],
+  "first38_sse_share": 0.36049279407184165,
+  "top10_errors_sse_share": 0.24421746445190018,
+  "spearman_position_target": -0.9809033617493097
+}

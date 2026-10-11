@@ -1,0 +1,14 @@
+{
+  "record_bootstrap_delta95": [
+    -0.18234788710612662,
+    -0.022692887902106076
+  ],
+  "record_bootstrap_fraction_improves": 0.996,
+  "conditional_public_win_fraction": 0.7168,
+  "conditional_public_delta_5_50_95": [
+    -0.39716881083529254,
+    -0.07842062081117107,
+    0.15890861655175292
+  ],
+  "fold_wins": 12
+}

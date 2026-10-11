@@ -1,0 +1,28 @@
+{
+  "selected": "local_linear_interaction1_ridge10",
+  "full_training_cv": {
+    "gaussian_interaction0_ridge10": 4.0156820760563825,
+    "local_linear_interaction1_ridge10": 3.7676490663069155
+  },
+  "v11_weight": 0.5,
+  "new_model_weight": 0.5,
+  "selection_seed": 560199,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "platform": "Linux-7.2.3-arch1-3-x86_64-with-glibc2.44",
+  "input_sha256": {
+    "/home/rian/Projects/fikfair/data/train.csv": "53b2442307c8cdc8d6e51923d0419c8dc008d268016f87756c1492972fc95399",
+    "/home/rian/Projects/fikfair/data/test.csv": "250e54e5c0a215d928db91fed64bb036808ed3148f1518ef1028a8c20eb42988",
+    "/home/rian/Projects/fikfair/data/submission_template.csv": "0636ae009a4ae69e60bdb24df68a4b7a918658725a31bee1bd52c7f9e128efb5",
+    "/home/rian/Projects/fikfair/outputs/fikfair_v11/submission_v11.csv": "75b95b01f6383a987d9cd84d84f3422d4a9e40978c107204a2a5c1fcdef88e1c"
+  },
+  "submission_sha256": "f4f24e0cf5aa480b77d724f82b2befe69267492dfd06dcb352cff8eda11cb462",
+  "same_environment_repeat_identical": true,
+  "v11_public_reported_by_user": 1.954949117,
+  "v12_public": null
+}

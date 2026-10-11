@@ -1,0 +1,18 @@
+[
+  {
+    "candidate": "nested_rank",
+    "bootstrap_fraction_improves": 0.9438,
+    "delta_rmse_95_percentile": [
+      -0.4557106846462523,
+      0.03792042665635838
+    ]
+  },
+  {
+    "candidate": "nested_rank_hedge_v9",
+    "bootstrap_fraction_improves": 0.9996,
+    "delta_rmse_95_percentile": [
+      -0.3560605529608572,
+      -0.09147977172924747
+    ]
+  }
+]

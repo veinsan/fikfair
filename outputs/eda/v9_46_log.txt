@@ -1,0 +1,7 @@
+
+======================================================================
+v6b reference: pooled 7.2552 | per-repeat 7.4163
+======================================================================
+  n_split=2: SVR-PL own RMSE=7.9137  blend delta pooled -0.0271  per-repeat -0.0343
+  n_split=4: SVR-PL own RMSE=7.9212  blend delta pooled -0.0180  per-repeat -0.0223
+  n_split=8: SVR-PL own RMSE=7.8991  blend delta pooled -0.0219  per-repeat -0.0252
